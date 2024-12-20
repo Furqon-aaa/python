@@ -8,9 +8,6 @@ class EduApp:
         self.root.title("About Semester-3")
         self.root.geometry("600x400")
 
-        # Variabel skor untuk kuis
-        self.score = 0
-
         # Judul aplikasi
         self.title_label = tk.Label(root, text=f"Selamat Datang, {self.student_name}!", 
                                     font=("Helvetica", 16), fg="blue")
