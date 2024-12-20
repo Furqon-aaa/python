@@ -30,10 +30,6 @@ class EduApp:
                                   command=self.show_jadwal, bg="lightgreen", width=30)
         self.btn_kuis.pack(pady=5)
 
-        self.btn_laporan = tk.Button(self.menu_frame, text="Lihat Hasil Kuis", 
-                                     command=self.show_report, bg="lightyellow", width=30)
-        self.btn_laporan.pack(pady=5)
-
         self.btn_keluar_sesi = tk.Button(self.menu_frame, text="Keluar Sesi", 
                                          command=self.logout, bg="orange", width=30)
         self.btn_keluar_sesi.pack(pady=5)
@@ -69,10 +65,6 @@ class EduApp:
                     ( Pemrograman Web : 15:30-18:00 WIB )
         """
         messagebox.showinfo("Jadwal kuliah", material)
-
-    def show_report(self):
-        """Menampilkan skor hasil kuis."""
-        messagebox.showinfo("Hasil Kuis", f"Skor Anda adalah: {self.score} poin")
 
     def logout(self):
         """Keluar sesi pengguna dan kembali ke menu nama."""
